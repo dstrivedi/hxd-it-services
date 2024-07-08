@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Contact Us - HxD IT Services",
@@ -11,18 +12,35 @@ export const metadata: Metadata = {
 
 const ContactPage = () => {
   return (
-    <div className="">
-      <section className="text-gray-700 body-font relative">
-        <div className="shadow-xl mx-auto w-3/4 my-10 p-16">
-          <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
+    <div>
+      <div className="relative w-[100vw] h-[40vh] lg:h-[80vh]">
+        <div className="z-[-1]">
+          <Image
+            src="/contactUs.jpg"
+            alt="Contact Us"
+            fill
+            priority
+            objectPosition="center"
+            objectFit="cover"
+          />
+        </div>
+
+        {/* <div className="relative text-center text-6xl top-[150px] font-bold">
+          <p>Contact Us</p>
+        </div> */}
+      </div>
+
+      <section className="text-gray-700 body-font">
+        <div className="shadow-xl mx-auto w-[85%] md:w-3/4 -mt-20 lg:-mt-10 mb-20 p-16 relative bg-white">
+          <div className="flex flex-col text-center w-full">
+            <h1 className="text-3xl font-semibold mb-4 text-gray-900">
               Get in Touch
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Whether you have questions about our services, need technical
-              assistance, or want to discuss a project, we're here to help.
-              Please fill out the form below, and we'll get back to you as soon
-              as possible.
+              assistance, or want to discuss a project, we&#39;re here to help.
+              Please fill out the form below, and we&#39;ll get back to you as
+              soon as possible.
             </p>
           </div>
           <div className=" w-full mx-auto">

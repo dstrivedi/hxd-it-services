@@ -52,15 +52,15 @@ const Footer = () => {
     <footer id="footer" className="">
       <div className="background">
         <div className="hidden lg:flex text-white w-full justify-evenly">
-          <div className="md:p-28">
+          <div className="md:p-16">
             <h1 className="text-2xl font-bold mb-6 uppercase">Quick Links</h1>
             {renderQuickLinks()}
           </div>
-          <div className="md:p-28">
+          <div className="md:p-16">
             <h1 className="text-2xl font-bold mb-6 uppercase">Working hours</h1>
             {renderWorkingHourse()}
           </div>
-          <div className="md:p-28 ">
+          <div className="md:p-16 ">
             <h1 className="text-2xl font-bold mb-6 uppercase">Contact</h1>
             {renderContacts()}
           </div>

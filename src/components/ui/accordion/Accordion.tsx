@@ -12,11 +12,11 @@ type IAccordion = {
 const Accordion = ({ title, children }: IAccordion) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="w-full px-8 pt-8">
+    <div className="w-full px-5 pt-5">
       <label
         htmlFor="expandCollapse"
         className={classNames(
-          "text-white w-full flex text-xl font-bold mb-8 uppercase"
+          "text-white w-full flex text-lg font-semibold mb-5 uppercase"
         )}
       >
         {title}

@@ -18,6 +18,8 @@
 
 html,
 body {
+  margin: 0;
+  padding: 0;
   position: relative;
   scrollbar-width: 10px;
   height: 100%;
@@ -29,4 +31,52 @@ header {
 
 * {
   box-sizing: border-box;
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffff !important;
+  opacity: 1 !important;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: #ffff !important;
+  opacity: 0.2 !important;
+}
+
+.ourMission,
+.ourVision {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.ourMission::after {
+  content: "";
+  background-image: url("/ourMission.jpg");
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ourVision::after {
+  content: "";
+  background-image: url("/ourVision.jpg");
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
